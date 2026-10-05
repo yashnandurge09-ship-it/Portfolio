@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="nav-logo">Yash Nandurge<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <!-- <li><a href="#blog"         class="nav-link">Blog</a></li> -->
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="resume.pdf" download="Yash_Nandurge_Resume" class="resume-btn">⬇ Resume</a>
+            <button class="hire-btn" onclick="sendMail()">Hire Me ↗</button>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <p class="eyebrow" data-aos="fade-up" data-aos-delay="100">👋 Welcome to my portfolio</p>
+            <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                I'm <span class="highlight">Yash</span>,<br>
+                <span id="typing-wrapper"><span id="typing"></span><span class="cursor-arrow">➜</span></span>
+            </h1>
+            <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+                I craft modern full-stack and AI-powered applications that solve real-world problems with clean, scalable code.
+            </p>
+            <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+                <button class="btn-primary" onclick="scrollToSection('projects')">View Projects</button>
+                <a href="resume.pdf" download="Yash_Nandurge_Resume" class="resume-btn">⬇ Download CV</a>
+                <div class="socials">
+                    <!-- <a href="https://github.com/" target="_blank" class="social-link">GitHub ↗</a> -->
+                    <a href="https://www.linkedin.com/in/yash-nandurge-3292733b3" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn ↗</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right" data-aos="fade-left" data-aos-delay="300">
+            <div class="profile-ring">
+                <img src="images/my-photo.jpeg" class="profile-img" alt="Yash">
+            </div>
+            <div class="floating-badge badge-1">React ⚛️</div>
+            <div class="floating-badge badge-2">Python 🐍</div>
+            <div class="floating-badge badge-3">Java 🔥</div>
+            <div class="floating-badge badge-4">AI/ML 🤖</div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar" data-aos="fade-up" stryle="top-margin: 20px;">
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Projects Built</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Years Experience of Coding</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Certifications</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Participated in Hackathon</span></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-tag">// About</span>
+            <h2 class="section-title">Who Am I?</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <p>I'm a <strong>Full Stack Developer</strong> passionate about building products at the intersection of great design and cutting-edge technology.</p>
+                <p>I specialize in crafting intelligent web applications using React, Node.js, and modern AI frameworks. I love turning complex problems into elegant, user-friendly solutions.</p>
+                <p>When I'm not coding, I'm writing tech blogs, contributing to open source, or winning hackathons ☕.</p>
+                <a href="resume.pdf" download="Yash_Nandurge_Resume" download class="btn-outline" style="display:inline-flex;margin-top:22px;">⬇ Download Resume</a>
+            </div>
+            <div class="about-cards">
+                <div class="about-card">
+                    <div class="about-card-icon">🎯</div>
+                    <h4>Goal-Oriented</h4>
+                    <p>Every line of code I write solves a real problem.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🚀</div>
+                    <h4>Fast Learner</h4>
+                    <p>Picked up new tech stacks end-to-end in days, not weeks.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-card-icon">🤝</div>
+                    <h4>Team Player</h4>
+                    <p>Collaborated across design, product, and engineering teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-tag">// Skills</span>
+            <h2 class="section-title">Tech Stack</h2>
+        </div>
+        <div class="skills-categories">
+            <div class="skills-category">
+                <h3 class="skills-cat-title">Frontend</h3>
+                <div class="skills-row">
+                    <div class="skill-card">
+                        <div class="skill-icon">⚛️</div><span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🟦</div><span>HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🌬️</div><span>CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">▲</div><span>JS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="skills-cat-title">Backend</h3>
+                <div class="skills-row">
+                    <div class="skill-card">
+                        <div class="skill-icon">🟢</div><span>Node.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐍</div><span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🍃</div><span>MongoDB</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">♨️</div><span>Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3 class="skills-cat-title">AI / ML & DevOps</h3>
+                <div class="skills-row">
+                    <div class="skill-card">
+                        <div class="skill-icon">🤖</div><span>Pandas</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔥</div><span>PyTorch</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🐳</div><span>Scikit-learn</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:72%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🔁</div><span>Numpy</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="skills-cat-title">Tools</h3>
+                <div class="skills-row">
+                    <div class="skill-card">
+                        <div class="skill-icon">🐙</div><span>Git & GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">🧑‍💻</div><span>VS Code</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">📓</div><span>Jupyter Notebook</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:72%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">☁️</div><span>AWS</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="--pct:65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-tag">// Experience</span>
+            <h2 class="section-title">My Journey</h2>
+        </div>
+        <div class="timeline">
+
+            <!-- <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023 — 2024</div>
+        <div class="timeline-card">
+          <div class="timeline-badge freelance">Freelance</div>
+          <h3>AI & Web Developer</h3>
+          <h4>Self-employed · Remote</h4>
+          <p>Delivered 8+ client projects including chatbots, dashboards, and e-commerce platforms. Integrated OpenAI APIs into 3 production apps.</p>
+          <div class="timeline-tags"><span>Python</span><span>OpenAI</span><span>React</span></div>
+        </div>
+      </div> -->
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2025 - 2025</div>
+                <div class="timeline-card">
+                    <div class="timeline-badge intern">Internship</div>
+                    <h3>Data Science Intern</h3>
+                    <h4>3Skills</h4>
+                    <p>Worked with Excel, Power BI, Python, Pandas, and NumPy for data analysis and visualization, and built interactive Power BI dashboards.</p>
+                    <div class="timeline-tags"><span>Data analysis</span><span>Data analytics</span><span>Power Bi</span></div>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="250">
+                <div class="timeline-dot edu"></div>
+                <div class="timeline-date">2023 — 2027</div>
+                <div class="timeline-card">
+                    <div class="timeline-badge education">Education</div>
+                    <h3>B.Tech – Computer Engineering</h3>
+                    <h4>Walchand Institute of Technology, Solapur</h4>
+                    <p>Graduating with 8.5 CGPA.</p>
+                    <div class="timeline-tags"><span>DSA</span><span>Development</span><span>ML</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-tag">// Projects</span>
+            <h2 class="section-title">Selected Work</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-number">01</div>
+                <div class="card-content">
+                    <div class="card-tags"><span>Full Stack</span><span>React</span><span>Node.js</span></div>
+                    <h3>Swiggy Delivery Clone</h3>
+                    <p>Developed a food delivery platform inspired by Swiggy with real-time order tracking, user authentication, and dynamic restaurant listings.</p>
+                    <div class="card-links">
+                        <!-- <a href="#" class="card-link">Live Demo ↗</a> -->
+                        <a href="#" class="card-link ghost">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://images.hindustantimes.com/img/2022/08/24/1600x900/house-of-the-dragon-swiggy-replaces-motorbike-with-dragon-icon_1661350731957_1661350761704_1661350761704.jpg" alt="Swiggy Delivery Tracking">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-number">02</div>
+                <div class="card-content">
+                    <div class="card-tags"><span>AI</span><span>Python</span><span>Deep Learning</span></div>
+                    <h3>Brain Tumor Detection</h3>
+                    <p>Built an AI model to detect brain tumors from MRI images using deep learning techniques, improving early diagnosis accuracy.</p>
+                    <div class="card-links">
+                        <!-- <a href="#" class="card-link">Live Demo ↗</a> -->
+                        <a href="#" class="card-link ghost">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://global.discourse-cdn.com/streamlit/optimized/2X/9/96220104178abedf185679023bcec1ef74b80bab_2_690x388.png" alt="Brain Tumor Detection App">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-number">03</div>
+                <div class="card-content">
+                    <div class="card-tags"><span>IoT</span><span>ESP32</span><span>Gyroscope</span></div>
+                    <h3>Air Mouse (Gyro)</h3>
+                    <p>Designed a gesture-controlled air mouse using gyroscope sensors and ESP32 to enable wireless cursor movement and interaction.</p>
+                    <div class="card-links">
+                        <!-- <a href="#" class="card-link">Live Demo ↗</a> -->
+                        <a href="#" class="card-link ghost">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://circuitdigest.com/sites/default/files/projectimage_mic/DIY-Gesture-Controlled-Arduino-based-Air-Mouse-using-Accelerometer.jpg" alt="Air Mouse Project">
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-number">03</div>
+                <div class="card-content">
+                    <div class="card-tags"><span>Python</span><span>ML</span><span>NLP</span></div>
+                    <h3>Real Estate Chat-Bot</h3>
+                    <p>Built an AI-powered chatbot using Python, Machine Learning, and NLP to understand user requirements and recommend suitable properties from a real-estate dataset.</p>
+                    <div class="card-links">
+                        <!-- <a href="#" class="card-link">Live Demo ↗</a> -->
+                        <a href="#" class="card-link ghost">GitHub ↗</a>
+                    </div>
+                </div>
+                <div class="card-image">
+                    <img src="https://media.istockphoto.com/id/2185474370/photo/lease-rental-and-selling-home-real-estate-agent-manager-smile-holding-key-for-new-owner-rent.jpg?s=612x612&w=0&k=20&c=_OF-AOgrHIYLbqTTbf3OLd_d75MF7JIXE7kUhpGdktQ=">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" data-aos="fade-up">
+        <div class="section-header">
+            <span class="section-tag">// Achievements</span>
+            <h2 class="section-title">Certifications & Wins</h2>
+        </div>
+        <div class="achievements-grid">
+
+            <div class="ach-column">
+                <h3 class="ach-col-title">🎓 Certifications</h3>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-logo">🤖</div>
+                    <div class="cert-info">
+                        <h4>C Programming</h4>
+                        <span class="cert-org">infosys springboard</span>
+                        <a href="#" class="cert-link">View Certificate ↗</a>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-logo">☁️</div>
+                    <div class="cert-info">
+                        <h4>Java Language</h4>
+                        <span class="cert-org">infosys springboard</span>
+                        <a href="#" class="cert-link">View Certificate ↗</a>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="cert-logo">☁️</div>
+                    <div class="cert-info">
+                        <h4>Python Language</h4>
+                        <span class="cert-org">infosys springboard</span>
+                        <a href="#" class="cert-link">View Certificate ↗</a>
+                    </div>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="cert-logo">⚛️</div>
+                    <div class="cert-info">
+                        <h4>DSA – The Complete Guide</h4>
+                        <span class="cert-org">infosys springboard</span>
+                        <a href="#" class="cert-link">View Certificate ↗</a>
+                    </div>
+                </div>
+                <!-- <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-logo">🐳</div>
+          <div class="cert-info">
+            <h4>Docker & Kubernetes Mastery</h4>
+            <span class="cert-org">Udemy · 2023</span>
+            <a href="#" class="cert-link">View Certificate ↗</a>
+          </div>
+        </div> -->
+            </div>
+
+            <div class="ach-column">
+                <h3 class="ach-col-title">🏆 Hackathons & Awards</h3>
+                <div class="award-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="award-rank Finalist">Finalist</div>
+                    <div class="award-info">
+                        <h4>Hackathon 2025</h4>
+                        <p>Organized by GTT data solutions Ltd</p>
+                    </div>
+                </div>
+                <div class="award-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="award-rank silver">Praticipated</div>
+                    <div class="award-info">
+                        <h4>Inter Collage BasketBall Turnament</h4>
+                        <p>Organized By Walchand Institute Of Technology Solapur</p>
+                    </div>
+                </div>
+                <!-- <div class="award-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="award-rank special">⭐ Special</div>
+          <div class="award-info">
+            <h4>Best Open Source Contributor</h4>
+            <p>Recognized for 50+ GitHub contributions to open-source projects.</p>
+          </div>
+        </div> -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BLOG -->
+    <!-- <section id="blog" data-aos="fade-up">
+    <div class="section-header">
+      <span class="section-tag">// Blog</span>
+      <h2 class="section-title">Tech Writing</h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="blog-tag-pill">AI / LLMs</div>
+        <h3>How I Built an AI Resume Builder with GPT-4</h3>
+        <p>A deep dive into prompt engineering, streaming responses, and building production-grade AI apps with real users.</p>
+        <div class="blog-meta">
+          <span>📅 March 2024</span>
+          <span>☕ 6 min read</span>
+        </div>
+        <a href="#" class="card-link">Read Article ↗</a>
+      </div>
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="blog-tag-pill">React</div>
+        <h3>React Performance Secrets Nobody Talks About</h3>
+        <p>Beyond memo and useCallback — advanced patterns for reducing re-renders in large-scale React applications.</p>
+        <div class="blog-meta">
+          <span>📅 January 2024</span>
+          <span>☕ 8 min read</span>
+        </div>
+        <a href="#" class="card-link">Read Article ↗</a>
+      </div>
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="blog-tag-pill">DevOps</div>
+        <h3>Dockerizing a Full Stack App in 15 Minutes</h3>
+        <p>Step-by-step guide to containerizing React + Node + MongoDB and deploying to AWS with zero downtime.</p>
+        <div class="blog-meta">
+          <span>📅 November 2023</span>
+          <span>☕ 5 min read</span>
+        </div>
+        <a href="#" class="card-link">Read Article ↗</a>
+      </div>
+      <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="blog-tag-pill">Career</div>
+        <h3>How I Landed My First Dev Job Without a CS Degree</h3>
+        <p>My honest journey from self-taught coder to professional developer — what worked and what I'd do differently.</p>
+        <div class="blog-meta">
+          <span>📅 August 2023</span>
+          <span>☕ 10 min read</span>
+        </div>
+        <a href="#" class="card-link">Read Article ↗</a>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- CONTACT -->
+    <section id="contact" data-aos="fade-up">
+        <div class="contact-inner">
+            <span class="section-tag">// Contact</span>
+            <h2 class="section-title">Let's Build Something<br><span class="highlight">Together</span></h2>
+            <p class="contact-desc">Open to freelance projects, full-time roles, or just a good tech conversation.</p>
+            <div class="contact-btns">
+                <button class="btn-primary btn-large" onclick="sendMail()">
+  Send Me a Mail ✉️
+</button>
+                <a href="resume.pdf" download class="btn-outline btn-large">⬇ Download CV</a>
+            </div>
+            <div class="contact-socials">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Designed & Built by <strong>Yash</strong> · <span id="year"></span></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
